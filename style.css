@@ -282,11 +282,17 @@ MODAL
   transform: translate(-50%, -50%);
   width: 90%;
   max-width: 1100px;
-  height: 700px; 
-  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+  height: 700px;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
+  visibility: hidden;
+}
+
+.modal--open .modal{
+  z-index: 60;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+  visibility: visible;
 }
 
 .modal__half {
@@ -405,6 +411,10 @@ MODAL
   font-weight: 700;
   text-align: center;
   padding: 28px;
+}
+
+.modal__overlay--visible {
+  z-index: 1;
 }
 
 .fa-spinner {
