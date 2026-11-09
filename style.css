@@ -126,6 +126,20 @@ input:focus, textarea:focus {
   width: 100%;
 }
 
+nav, .scroll, .header  {
+  opacity: 1;
+  visibility: visible;
+  transition: all 600ms 800ms;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms;
+}
+
 .dark-theme .title, 
 .dark-theme .section__title, 
 .dark-theme .section__sub-title, 
@@ -178,7 +192,7 @@ LANDING PAGE
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 1000px;
-  padding: 0 30px; 
+  padding: 0 30px 0 75px; 
 
 }
 
@@ -618,59 +632,58 @@ footer {
 SHAPES
 
 shapes on the first row
-height = 35vh
+height = 15vh top
 shapes on the second row
-height = 70vh
+height = 50vh top
 shapes on the third row
-height = 95vh
+height = 80vh top
 
 shapes on the first column
-width = 5vw
+width = 5vw left
 shapes on the second column
-width = 50vw
+width = 50vw left
 shapes on the third column
-width = 80vw
+width = 80vw left
 
 */
 .shape {
   position: fixed;
 }
 
-
 .shape--0 {
-  height: 35vh;
-  width: 5vw;
+  top: 15vh;
+  left: 5vw;
 }
 .shape--1 {
-  height: 35vh;
-  width: 50vw;
+  top: 15vh;
+  left: 50vw;
 }
 .shape--2 {
-  height: 35vh;
-  width: 80vw;
+  top: 15vh;
+  left: 80vw;
 }
 .shape--3 {
-  height: 70vh;
-  width: 5vw;
+  top: 50vh;
+  left: 5vw;
 }
 .shape--4 {
-  height: 70vh;
-  width: 50vw;
+  top: 50vh;
+  left: 50vw;
 }
 .shape--5 {
-  height: 70vh;
-  width: 80vw;
+  top: 50vh;
+  left: 80vw;
 }
 .shape--6 {
-  height: 95vh;
-  width: 5vw;
+  top: 80vh;
+  left: 5vw;
 }
 .shape--7 {
-  height: 95vh;
-  width: 50vw;
+  top: 80vh;
+  left: 50vw;
 }
 .shape--8 {
-  height: 95vh;
-  width: 80vw;
+  top: 80vh;
+  left: 80vw;
 }
-.
+
