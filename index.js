@@ -1,3 +1,17 @@
+let contrastToggle = false;
+
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList  += " dark-theme"
+  }
+  else {
+    document.body.classList.remove("dark-theme")
+  }
+  
+}
+
+
 
 function contact(event) {
   event.preventDefault();
@@ -13,6 +27,9 @@ function contact(event) {
     ).then(() => {       
       loading.classList.remove("modal__overlay--visible");
       success.classList += " modal__overlay--visible";
+      setTimeout(()=> {
+        success.classList.remove("modal__overlay--visible")
+      }, 3000)
     }).catch(() => {
       loading.classList.remove("modal__overlay--visible");
       alert(
