@@ -22,12 +22,28 @@ function contact(event) {
 
 }
 
-let isModalOpen = false;
-function toggleModal() {
-  isModalOpen = !isModalOpen
-  if (isModalOpen) {
-    return document.body.classList.remove("modal--open")
-  }
-  
-  document.body.classList +=  " modal--open";
+// this code works//
+// let x = false;
+
+// function toggleModal() {
+//   x = !x;
+//   document.body.classList.toggle("modal--open", x);
+//  }
+
+// below  is the same code in Ternary oparation
+
+// let x = false;
+
+// function toggleModal() {
+//   x = !x;
+
+//   x
+//     ? document.body.classList.add("modal--open")
+//     : document.body.classList.remove("modal--open");
+// }
+
+// classList.toggle() automatically checks whether the class exists. If it does, JavaScript removes it. If it doesn't, JavaScript adds it
+
+function toggleModal () {
+  document.body.classList.toggle ("modal--open")
 }
