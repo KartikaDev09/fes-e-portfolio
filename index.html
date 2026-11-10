@@ -26,7 +26,7 @@
           <img id="personal-logo" src="./assets/KPLogo.png" alt="" />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -35,7 +35,7 @@
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#Projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
@@ -73,7 +73,7 @@
               class="social__link click"
               >
               <i class="fa-brands fa-square-linkedin"></i>
-              
+              <span class="language__name">Linkedin</span>
             </a>
             <a
               href="https://github.com/KartikaDev09/fes-e-portfolio"
@@ -92,9 +92,11 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fa-regular fa-envelope"></i>
-      </button>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fa-regular fa-envelope"></i>
+        </button>
+      </a>
       <a href="#project" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
@@ -255,13 +257,13 @@
               LinkedIn
             </a>
             <a
-              href="#"
+              href="#" onclick="toggleModal()"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Contact
             </a>
             <a
-              href="#"
+              href="./assets/Kartika Parker _SoftwareTester_BusinessAnalyst (3).pdf" target="_blank" 
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Resume
