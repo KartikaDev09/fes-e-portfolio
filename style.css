@@ -270,7 +270,7 @@ LANDING PAGE
 
 @keyframes scroll {
   0% {
-    transform: translateY(3xpx)
+    transform: translateY(3px)
   }
 
   100% {
