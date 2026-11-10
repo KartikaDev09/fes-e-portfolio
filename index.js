@@ -56,8 +56,13 @@ function contact(event) {
         "The email service is temporarily unavailable. Please contact me directly on jnk0909@gmail.com "
       )
     })
-
 }
+
+
+
+
+
+
 
 // this code works//
 // let x = false;
@@ -83,4 +88,5 @@ function contact(event) {
 
 function toggleModal () {
   document.body.classList.toggle ("modal--open")
+  
 }
