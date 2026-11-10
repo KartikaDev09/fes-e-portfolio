@@ -44,7 +44,9 @@ function contact(event) {
       'template_kpks11j',
       event.target,
       '5kydEAIMK_gue1Owp'
-    ).then(() => {       
+    ).then(() => {     
+      // 
+      document.getElementById("contact__form").reset();
       loading.classList.remove("modal__overlay--visible");
       success.classList += " modal__overlay--visible";
       setTimeout(()=> {
